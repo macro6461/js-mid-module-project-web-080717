@@ -24,7 +24,7 @@ Once you understand which website you want to re-create, search around for that 
 
 ### Some Examples
 
-~ * The Followers page of twitter: https://twitter.com/followers~ The Twitter API can no longer be accessed from the browser, meaning you'd need a server in order to communicate with Twitter
+~~The Followers page of twitter: https://twitter.com/followers~~\ The Twitter API can no longer be accessed from the browser, meaning you'd need a server in order to communicate with Twitter
  * Foursquare Venue search: https://foursquare.com/search
  * Foursquare Lists browser: https://foursquare.com/jmburges/lists/created
  * Dribble Viewer: https://dribbble.com/shots?sort=views
