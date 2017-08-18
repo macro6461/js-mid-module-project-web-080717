@@ -18,7 +18,7 @@ Your final product will be just some HTML and Javascript!
 
 Once you understand which website you want to re-create, search around for that companies API. Read their documentation and make sure you can do, what you want to do with their API. In particular, we highly recommend trying to hit the API with Postman to make sure the data returned is what you expect. 
 
-**A Note on CORS** Make sure your API supports either CORS or JSONP. Google around to ensure this. _If_ you can't find an API that you want to work with that supports one of these technologies you will have to disable CORS in your browser. To do this, close all Chrome browsers, open up a terminal and type `open -a Google\ Chrome --args --disable-web-security --user-data-dir`.
+**A Note on CORS** Make sure your API supports either CORS or JSONP. Google around to ensure this. If you encounter a CORS error you'll need to find another API; we haven't gotten to CORS yet so don't worry about it for now.
 
 **APIs to avoid**: Yelp, Facebook and anything Google. They are all crazy confusing. 
 
