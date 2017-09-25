@@ -10,7 +10,7 @@ Today we are going to spend the day just creating a product. That means no tests
 
 ### The Problem 
 
-Your goal is to recreate a super simplified version of one of your favorite websites. You'll be using the API provided by the backend, and your new found Javascript, jQuery and AJAX skills to create the front end. 
+Your goal is to recreate a super simplified version of one of your favorite websites. There will be no peristence in your application, you will use your JS and AJAX skills to write code that runs on the client.  To work with real and intersting data you will retrieve data from a third party API.  A term you may hear developers use is that your client-app will _consume_ the data (i.e the JSON) returned from the API.
 
 Your final product will be just some HTML and Javascript!
 
@@ -20,11 +20,10 @@ Once you understand which website you want to re-create, search around for that 
 
 **A Note on CORS** Make sure your API supports either CORS or JSONP. Google around to ensure this. If you encounter a CORS error you'll need to find another API; we haven't gotten to CORS yet so don't worry about it for now.
 
-**APIs to avoid**: Yelp, and Facebook. They are crazy confusing. 
+**APIs to avoid**: Yelp, Twitter, and Facebook. They are crazy confusing. 
 
 ### Some Examples
 
-~~The Followers page of twitter~~ The Twitter API can no longer be accessed from the browser, meaning you'd need a server in order to communicate with Twitter
  * Foursquare Venue search: https://foursquare.com/search
  * Foursquare Lists browser: https://foursquare.com/jmburges/lists/created
  * Dribble Viewer: https://dribbble.com/shots?sort=views
