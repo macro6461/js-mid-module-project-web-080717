@@ -20,7 +20,7 @@ Once you understand which website you want to re-create, search around for that 
 
 **A Note on CORS** Make sure your API supports either CORS or JSONP. Google around to ensure this. If you encounter a CORS error you'll need to find another API; we haven't gotten to CORS yet so don't worry about it for now.
 
-**APIs to avoid**: Yelp, Facebook and anything Google. They are all crazy confusing. 
+**APIs to avoid**: Yelp, and Facebook. They are crazy confusing. 
 
 ### Some Examples
 
