@@ -10,7 +10,7 @@ Today we are going to spend the day just creating a product. That means no tests
 
 ### The Problem 
 
-Your goal is to recreate a super simplified version of one of your favorite websites. There will be no peristence in your application, you will use your JS and AJAX skills to write code that runs on the client.  Your application will be what is known as a **SPA** or *Single Page Application*. This means exactly what it sounds like, your application will have not have seprate routes. All the functionality will be happening on the same page by using JavaScript to replace and modify the html content in the DOM.
+Your goal is to recreate a super simplified version of one of your favorite websites. There will be no peristence in your application, you will use your JS and AJAX skills to write code that runs on the client.  Your application will be what is known as a **SPA** or *Single Page Application*. This means exactly what it sounds like it does, your application will have not have separate routes. All the functionality will be happening on the same page by using JavaScript to replace and modify the html content in the DOM.
 
 To work with real and intersting data you will retrieve data from a third party API.  A term you may hear developers use is that your client-app will _consume_ the data (i.e the JSON) returned from the API.
 
