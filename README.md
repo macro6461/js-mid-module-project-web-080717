@@ -24,10 +24,13 @@ Once you understand which website you want to re-create, search around for that 
 
 **APIs to avoid**: Yelp, Twitter, and Facebook. They are crazy confusing. 
 
-### Some Examples
+***APIs to check out**: 
+ - City of New York Open Data: https://opendata.cityofnewyork.us/data/
+ - Public APIs:  https://github.com/toddmotto/public-apis
+
+### Some Single Page App Ideas
 
  * Foursquare Venue search: https://foursquare.com/search
  * Foursquare Lists browser: https://foursquare.com/jmburges/lists/created
  * Dribble Viewer: https://dribbble.com/shots?sort=views
- 
-There are a tons more APIs here: https://github.com/toddmotto/public-apis
+
