@@ -28,21 +28,6 @@ function showQuote(json){
   input.value = ""
 }
 
-// function displayData() {
-//   if (guess.length === 2) {
-//     name_pic.style.display = 'unset'
-//   } else {
-//     if (input.value.toLowerCase()=== characterName.toLowerCase()) {
-//       name_pic.style.display = 'unset'
-//       guessed_wrong.innerHTML = ""
-//     } else {
-//       name_pic.style.display = 'none'
-//       guess.push(input.value.toLowerCase())
-//       guessed_wrong.innerHTML = "WRONG!"
-//     }
-//   }
-// }
-
 
 function displayData() {
   if (guess.length === 2) {
@@ -52,7 +37,7 @@ function displayData() {
       name_pic.style.display = 'unset'
       guessed_wrong.innerHTML = "WRONG!"
       setTimeout(fadeOut, 4000)
-      setTimeout(gone, 5000)
+      setTimeout(gone, 4000)
     }
   } else {
     if (input.value.toLowerCase()=== characterName.toLowerCase()) {
@@ -70,6 +55,7 @@ function displayData() {
 }
 
 function fadeOut(){
+  debugger;
   name_pic.style.animationName = "disappear"
 }
 
