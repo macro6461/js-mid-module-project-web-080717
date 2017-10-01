@@ -11,7 +11,7 @@ body {
 
 h1{
   text-align: center;
-  font-size: 5vw;
+  font-size: 8vw;
   color: yellow;
   text-shadow: 5px 5px black;
   margin-top: 0.5%;
@@ -117,7 +117,7 @@ h3{
 }
 
 #wrong {
-  size: 2vw;
+  size: 4vw;
   color: red;
   margin-bottom: 0;
   animation: blinker 1s linear infinite;
@@ -128,17 +128,17 @@ button {
   border-radius: 10px;
   border-width: 0;
   background-color: yellow;
-  font-size: 3vw;
+  font-size: 6vw;
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 2%;
   padding: 1%;
   display: block;
-  margin-left: 40%;
+  margin-left: 32%;
 
 }
 
 #coolButton{
-  margin-left: 36%;
+  margin-left: 26%;
 }
 
 button:hover{
