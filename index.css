@@ -1,8 +1,12 @@
 body {
+    width: 100%;
+    height: auto;
     background-image: url("images/springfield.jpg");
     font-family: 'Wendy One', sans-serif;
     margin-left: 2%;
     margin-right: 2%;
+    background-width: 100%;
+    background-height: auto;
 }
 
 h1{
@@ -19,7 +23,8 @@ input{
   border-radius: 10px;
   border: solid 2px white;
   background-color: skyblue;
-  font-size: 3vw;
+  width: 30%;
+  font-size: 5vw;
   padding: .4%;
   font-color: yellow;
   font-family: 'Josefin Sans', sans-serif;
@@ -35,18 +40,18 @@ button:focus{
 
 h2{
   display: inline-block;
-  font-size: 2vw;
+  font-size: 3vw;
   color: yellow;
   text-align: center;
   text-shadow: 3px 2px black;
   margin-left: 4%;
-  margin-right: 38%;
+  margin-right: 32%;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
 }
 
 h3{
-  font-size: 2vw;
+  font-size: 4vw;
   color: white;
   text-shadow: 3px 2px black;
   margin-top: 0;
@@ -60,28 +65,68 @@ h3{
   100% { opacity: 0; }
 }
 
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@-webkit-keyframes visible {
+  0%   { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+#newQuote{
+  font-family: 'Wendy One', sans-serif;
+  text-align: center;
+  font-size: 4vw;
+  color: yellow;
+  text-shadow: 5px 5px black;
+  margin-top: 0.5%;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   width: 60%;
+   position: fixed;
+   top: 35%;
+   left: 20%;
+   padding: 5%;
+   animation: spin 2s;
+}
+
 #name_picture{
   width: 16%;
   position: fixed;
-  bottom: 50px;
-  left: 50px;
-  margin-left: 42%;
-  -webkit-animation: dissappear 5s;
+  top: 8%;
+  left: 40%;
+}
+
+#simpson_picture{
+  width: 120%;
+  height: auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(1800deg);
+  }
 }
 
 #wrong {
   size: 2vw;
   color: red;
+  margin-bottom: 0;
+  animation: blinker 1s linear infinite;
 }
 
 button {
   border-radius: 10px;
   border-width: 0;
   background-color: yellow;
-  font-size: 1vw;
+  font-size: 3vw;
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 2%;
-  padding: 0.75%;
+  padding: 1%;
 
 }
 
