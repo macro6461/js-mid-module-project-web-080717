@@ -17,6 +17,7 @@ h1{
   margin-top: 0.5%;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+text-align: center;
 }
 
 input{
@@ -28,6 +29,7 @@ input{
   padding: .4%;
   font-color: yellow;
   font-family: 'Josefin Sans', sans-serif;
+  margin-left: 34%;
 }
 
 textarea:focus, input:focus{
@@ -48,6 +50,7 @@ h2{
   margin-right: 4%;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+   text-align: center;
 }
 
 h3{
@@ -58,6 +61,7 @@ h3{
   width: 100%;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+   text-align: center;
 }
 
 @-webkit-keyframes disappear {
@@ -117,6 +121,7 @@ h3{
   color: red;
   margin-bottom: 0;
   animation: blinker 1s linear infinite;
+  text-align: center;
 }
 
 button {
@@ -127,7 +132,13 @@ button {
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 2%;
   padding: 1%;
+  display: block;
+  margin-left: 40%;
 
+}
+
+#coolButton{
+  margin-left: 36%;
 }
 
 button:hover{
