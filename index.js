@@ -41,6 +41,7 @@ function displayData() {
       name_pic.style.display = 'unset'
       guessed_wrong.style.color = 'green'
       guessed_wrong.innerHTML = "RIGHT!"
+      guess = []
 
       setTimeout(hitNewQuote, 2000)
     } else if (input.value.split(" ")[0].toLowerCase()===characterName.split(" ")[0].toLowerCase()){
@@ -48,13 +49,16 @@ function displayData() {
       guessed_wrong.style.color = 'green'
       guessed_wrong.innerHTML = "RIGHT!"
       setTimeout(hitNewQuote, 2000)
+      guess = []
+
     } else {
       name_pic2.style.display = 'unset'
       guessed_wrong.innerHTML = "WRONG!"
-      setTimeout(fadeOut, 2000)
-      setTimeout(gone, 2000)
+      setTimeout(fadeOut, 4000)
+      setTimeout(gone, 5000)
       setTimeout(hitNewQuote, 6000)
       inputRefresh()
+      guess = []
     }
   } else {
     if (input.value.toLowerCase()=== characterName.toLowerCase()) {
@@ -62,11 +66,15 @@ function displayData() {
       guessed_wrong.style.color = 'green'
       guessed_wrong.innerHTML = "RIGHT!"
       setTimeout(hitNewQuote, 2000)
+      guess = []
+
     } else if (input.value.split(" ")[0].toLowerCase()===characterName.split(" ")[0].toLowerCase()){
       name_pic.style.display = 'unset'
       guessed_wrong.style.color = 'green'
       guessed_wrong.innerHTML = "RIGHT!"
       setTimeout(hitNewQuote, 2000)
+      guess = []
+
     } else {
       name_pic.style.display = 'none'
       guess.push(1)
