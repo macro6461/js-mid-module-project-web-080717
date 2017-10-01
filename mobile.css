@@ -40,7 +40,7 @@ button:focus{
 
 h2{
   display: inline-block;
-  font-size: 3vw;
+  font-size: 5vw;
   color: yellow;
   text-align: center;
   text-shadow: 3px 2px black;
@@ -94,7 +94,7 @@ h3{
 #name_picture{
   width: 16%;
   position: fixed;
-  top: 8%;
+  top: 50%;
   left: 40%;
 }
 

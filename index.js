@@ -9,6 +9,7 @@ var guess = []
 var newQuote = document.getElementById('newQuote')
 
 function fetchQuotes(){
+  guess = []
   fetch("https://thesimpsonsquoteapi.glitch.me/quotes?count=1")
     .then(res => res.json())
     .then(json => showQuote(json));
@@ -66,6 +67,7 @@ function displayData() {
 
     }
   }
+  input.value = ""
 }
 
 function fadeOut(){
