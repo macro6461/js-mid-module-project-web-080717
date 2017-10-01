@@ -1,6 +1,8 @@
 var button = document.getElementById("coolButton")
 var title = document.getElementById("simpsons_quote")
 var name_pic = document.getElementById("name_picture")
+var name_pic2 = document.getElementById("name_picture2")
+
 var charButton = document.getElementById("characterButton")
 var input = document.getElementById("input")
 var guessed_wrong = document.getElementById('wrong')
@@ -22,8 +24,10 @@ function showQuote(json){
   characterName = result.character
   title.innerHTML = quote
   document.querySelector('#simpson_picture').src = picture
+  document.querySelector('#at_third_try').src = picture
   document.querySelector('#name').innerHTML = characterName
   name_pic.style.display = 'none'
+  name_pic2.style.display = 'none'
   guessed_wrong.innerHTML = ""
   guessed_wrong.style.color = "red"
   input.value = ""
@@ -37,6 +41,7 @@ function displayData() {
       name_pic.style.display = 'unset'
       guessed_wrong.style.color = 'green'
       guessed_wrong.innerHTML = "RIGHT!"
+
       setTimeout(hitNewQuote, 2000)
     } else if (input.value.split(" ")[0].toLowerCase()===characterName.split(" ")[0].toLowerCase()){
       name_pic.style.display = 'unset'
@@ -44,9 +49,12 @@ function displayData() {
       guessed_wrong.innerHTML = "RIGHT!"
       setTimeout(hitNewQuote, 2000)
     } else {
-      name_pic.style.display = 'unset'
+      name_pic2.style.display = 'unset'
       guessed_wrong.innerHTML = "WRONG!"
-      setTimeout(hitNewQuote, 2000)
+      setTimeout(fadeOut, 2000)
+      setTimeout(gone, 2000)
+      setTimeout(hitNewQuote, 6000)
+      inputRefresh()
     }
   } else {
     if (input.value.toLowerCase()=== characterName.toLowerCase()) {
@@ -63,6 +71,7 @@ function displayData() {
       name_pic.style.display = 'none'
       guess.push(1)
       guessed_wrong.innerHTML = "WRONG!"
+      inputRefresh()
 
     }
   }
@@ -70,13 +79,13 @@ function displayData() {
 
 function fadeOut(){
 
-  name_pic.style.animationName = "disappear"
-  name_pic.style.animationDuration = "4s"
+  name_pic2.style.animationName = "disappear"
+  name_pic2.style.animationDuration = "4s"
 }
 
 function gone(){
 
-  name_pic.style.opacity = 0;
+  name_pic2.style.opacity = 0;
 }
 
 
@@ -87,6 +96,10 @@ function reset_guess() {
 function hitNewQuote(){
   newQuote.style.display = "unset"
   newQuote.style.animationName = "spin"
+}
+
+function inputRefresh() {
+  input.value = ""
 }
 
 title.addEventListener("load", fetchQuotes)
