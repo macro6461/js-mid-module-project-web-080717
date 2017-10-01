@@ -90,7 +90,7 @@ h3{
    width: 60%;
    position: fixed;
    top: 35%;
-   left: 20%;
+   margin-left: 20%;
    padding: 5%;
    animation: spin 2s;
 }
